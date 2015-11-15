@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:clickable="false">
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_apply_on_boot"
+        android:id="@+id/switch_onStartup"
+        android:checked="false"
+        android:layout_below="@+id/btn_apply"
+        android:layout_alignStart="@+id/switch_pocketmod" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/text_homepage"
+        android:id="@+id/homepage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:autoLink="web"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/res_switch_dt2w"
+        android:id="@+id/switch_dt2w"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/res_switch_pocketmod"
+        android:id="@+id/switch_pocketmod"
+        android:layout_below="@+id/txt_dt2w"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/res_txt_dt2w"
+        android:id="@+id/txt_dt2w"
+        android:layout_below="@+id/switch_dt2w"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/res_txt_pocketmod"
+        android:id="@+id/txt_pocketmod"
+        android:layout_below="@+id/switch_pocketmod"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/res_btn_apply"
+        android:id="@+id/btn_apply"
+        android:onClick="onButtonClick"
+        android:layout_below="@+id/seekBar_vibrator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/res_switch_dyn_fsync"
+        android:id="@+id/switch_dyn_fsync"
+        android:layout_below="@+id/txt_pocketmod"
+        android:layout_alignStart="@+id/switch_dt2w" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/res_txt_dyn_fsync"
+        android:id="@+id/textView"
+        android:layout_below="@+id/switch_dyn_fsync"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_vibrator"
+        android:max="7"
+        android:progress="5"
+        android:layout_below="@+id/txt_vibrator"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/res_txt_vibrator"
+        android:id="@+id/txt_vibrator"
+        android:visibility="visible"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/btn_apply"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/res_txt_donate_to_me"
+        android:id="@+id/button"
+        android:textSize="8dp"
+        android:onClick="onDonateButtonClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

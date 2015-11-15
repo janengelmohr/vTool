@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">vTool</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_header">ohai!</string>
+    <string name="text_apply_on_boot">Apply on boot!</string>
+    <string name="text_homepage">visi0nary.de</string>
+    <string name="res_switch_dt2w">DoubleTap2Wake</string>
+    <string name="res_switch_pocketmod">PocketMod</string>
+    <string name="res_txt_dt2w">Double tapping the screen will wake the device</string>
+    <string name="res_txt_pocketmod">Screen will not wake when device is in pocket</string>
+    <string name="res_btn_apply">Apply!</string>
+    <string name="res_switch_dyn_fsync">Dynamic FSYNC</string>
+    <string name="res_txt_dyn_fsync">fsync works asynchronous for better performance when the screen is on. Otherwise it\'s still synchronous to avoid data loss.</string>
+    <string name="res_txt_vibrator">Vibration intensity</string>
+    <string name="res_txt_vibration_explain" >There are 8 possible vibration intensities.</string>
+    <string name="res_txt_donate_to_me" >Buy me a coffee. :)</string>
+
+</resources>
